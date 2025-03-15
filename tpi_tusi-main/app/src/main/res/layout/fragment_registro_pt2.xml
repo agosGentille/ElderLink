@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView_temasInteres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="3dp"
+        android:text="Selecciones al menos tres temas de interés"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout_etiquetas"/>
+
+    <TextView
+        android:id="@+id/textView_rol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="3dp"
+        android:text="¿Cuál es su objetivo con esta aplicación?"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Me interesa APRENDER (alumno)"
+        android:tag="alumno"/>
+
+    <CheckBox
+        android:id="@+id/checkBox_gestor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Me interesa ENSEÑAR (gestor)"
+        android:tag="gestor"/>
+
+    <Button
+        android:id="@+id/button_finalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finalizar registro" />
+
+</LinearLayout>

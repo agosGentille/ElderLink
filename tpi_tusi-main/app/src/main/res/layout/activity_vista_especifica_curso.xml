@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".ui.activities.vistaEspecificaCurso">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/barra_de_herramientas"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            <LinearLayout
+                android:layout_marginTop="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <ImageButton
+                    android:id="@+id/btnAgregarValoracion"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:textSize="14sp"
+                    android:src="@drawable/ic_valorar"
+                    android:contentDescription="Valorar Curso"
+                    android:layout_gravity="end"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05" />
+                <ImageButton
+                    android:id="@+id/btnDenunciarCurso"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:textSize="14sp"
+                    android:src="@drawable/ic_denunciar"
+                    android:contentDescription="Denunciar Curso"
+                    android:layout_gravity="end"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_nombre_curso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="0sp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_Portada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <TextView
+                android:id="@+id/tv_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:id="@+id/tvEtapas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="CONTENIDO "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <FrameLayout
+                android:id="@+id/expandable_list_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ExpandableListView
+                    android:id="@+id/expandableListViewCursos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="400dp"
+                    android:textSize="14sp"/>
+            </FrameLayout>
+            <TextView
+                android:id="@+id/subtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="TEMAS RELACIONADOS"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:chipSpacing="8dp"
+                    app:strokeColor="@color/dark_blue"
+                    android:textSize="14sp">
+                </com.google.android.material.chip.ChipGroup>
+
+                <Button
+                    android:id="@+id/btnRealizarAutoeval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:text="Realizar Cuestionario" />
+
+                <Button
+                    android:id="@+id/btnVerIntentos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:text="Ver intentos de autoevaluaciones" />
+
+            </TableLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <!-- Menú de navegación -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

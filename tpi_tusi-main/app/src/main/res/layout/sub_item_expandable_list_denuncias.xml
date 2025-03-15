@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/usuarioDenuncia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario que denunció"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/razonDenuncia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Razón de la denuncia"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btnEliminarDenuncia"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:src="@drawable/ic_quitar"
+        android:contentDescription="Eliminar Pregunta"
+        android:layout_gravity="end"/>
+</LinearLayout>

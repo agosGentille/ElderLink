@@ -1,0 +1,1 @@
+INSERT INTO Roles (id_rol, descripcion) VALUES (1, "ADMIN"), (2, "GESTOR"), (3, "ESTUDIANTE")

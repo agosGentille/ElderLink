@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">TPI_TUSI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnCrearCurso">Crear Curso</string>
+    <string name="btnAgregarEtapa">Agregar Etapa</string>
+    <string name="nombreCurso">Nombre del curso</string>
+    <string name="descCurso">Descripcion del curso</string>
+    <string name="Categoria">Seleccione la categoria</string>
+    <string name="agregarArchivo">Agregar archivo</string>
+    <string name="agregarAuto">Agregar Auto evaluacion</string>
+    <string name="title_activity_home">activity_home</string>
+
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_mi_cuenta">Mi Cuenta</string>
+    <string name="menu_listado_de_eventos">Listado de Eventos</string>
+    <string name="menu_cerrar_sesion">Cerrar Sesión</string>
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+
+
+    <!-- Nombres de los botones innecesarios -->
+    <string name="btn_login">Login</string>
+    <string name="btn_registro">Registro</string>
+    <string name="btn_MainAdminActivity">Main Administradores</string>
+    <string name="btn_MainEstudianteActivity">Main Estudiantes</string>
+    <string name="btn_MainGestorActivity">Main Gestores</string>
+    <string name="btn_eventos">eventos</string>
+
+
+    <string name="descipcion">Que aprenderas?</string>
+    <string name="desc2">A como adjuntar fotos y documentos a un correo electronico</string>
+    <string name="desc3">A como abrir y guardar archivos adjuntos que recibas</string>
+
+    <!-- Nombres de Reportes -->
+    <string name="reporte1">Porcentaje de finalizacion de curso</string>
+    <string name="reporte2">Promedio de calificaciones</string>
+    <string name="reporte3">Promedio de valoraciones</string>
+    <string name="btnEliminarPregunta">Eliminar</string>
+</resources>

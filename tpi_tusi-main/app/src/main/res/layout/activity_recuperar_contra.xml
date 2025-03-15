@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#f5f5f5">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:inputType="text"
+        android:backgroundTint="#6066cc"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#cccccc"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/sendCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar código de validación"
+        android:backgroundTint="#6066cc"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código"
+        android:inputType="text"
+        android:backgroundTint="#6066cc"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#cccccc"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/validateCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificar código"
+        android:backgroundTint="#6066cc"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Contraseña -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:backgroundTint="#6066cc"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#cccccc"
+            android:layout_marginEnd="8dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButton_verContra"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ver_contra" />
+
+            <ImageButton
+                android:id="@+id/imageButton_ocultarContra"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/invisible"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/repass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Confirmar contraseña"
+            android:inputType="textPassword"
+            android:backgroundTint="#6066cc"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#cccccc"
+            android:layout_marginEnd="8dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButton_verContraRepass"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ver_contra" />
+
+            <ImageButton
+                android:id="@+id/imageButton_ocultarContraRepass"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/invisible"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/newPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar nueva contraseña"
+        android:backgroundTint="#6066cc"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp" />
+</LinearLayout>

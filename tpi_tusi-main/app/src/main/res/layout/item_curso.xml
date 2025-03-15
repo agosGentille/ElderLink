@@ -1,0 +1,69 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Indicador de estado -->
+    <View
+        android:id="@+id/estado_rectangulo"
+        android:layout_width="11dp"
+        android:layout_height="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_perfil"
+        tools:background="#1FBDAA" />
+
+    <!-- Imagen del curso -->
+    <ImageView
+        android:id="@+id/image_perfil"
+        android:layout_width="134dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="Imagen del curso"
+        android:src="@android:drawable/sym_def_app_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textView_titulo_curso"
+    app:layout_constraintStart_toEndOf="@id/estado_rectangulo"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.365" />
+
+    <!-- Título del curso -->
+    <TextView
+        android:id="@+id/textView_titulo_curso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="Título del Curso"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image_perfil"
+        app:layout_constraintTop_toTopOf="@id/image_perfil" />
+
+    <!-- Descripción del curso -->
+    <TextView
+        android:id="@+id/textView_descripcion_curso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="Descripción del curso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textView_titulo_curso"
+        app:layout_constraintTop_toBottomOf="@id/textView_titulo_curso" />
+
+    <!-- Contenedor de botones -->
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_perfil"
+        app:layout_constraintTop_toBottomOf="@id/textView_descripcion_curso" /> <!-- Cambiado para referirse correctamente -->
+</androidx.constraintlayout.widget.ConstraintLayout>

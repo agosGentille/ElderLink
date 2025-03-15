@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona tu valoración"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Nos ayudaría un montón que califiques nuestros cursos! Según qué tan interesante, accesible y útil los encuentres, selecciona de 1 a 5 estrellas."
+        android:textSize="16sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="1"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 estrella: Muy insatisfecho | 5 estrellas: Muy satisfecho"
+        android:textSize="12sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/darker_gray"/>
+
+
+    <Button
+        android:id="@+id/btnEnviarValoracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar valoración"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categorias_array">
+        <item>Redes Sociales</item>
+        <item>Ofimática</item>
+        <item>Manejo de Windows</item>
+        <item>Inteligencia Artificial</item>
+    </string-array>
+</resources>

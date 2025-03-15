@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- TextView para mostrar el contenido de la etapa cuando no hay un iframe -->
+    <TextView
+        android:id="@+id/tvContenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contenido de la etapa"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <!-- WebView para mostrar videos de YouTube si se detecta un iframe en el contenido -->
+    <WebView
+        android:id="@+id/webViewVideo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone" />
+</LinearLayout>
+

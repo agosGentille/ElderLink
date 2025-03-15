@@ -1,0 +1,112 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (SDK location, etc.)
+local.properties
+
+# Log and OS files
+*.log
+*.swp
+.DS_Store
+.idea/
+.vscode/
+*.iml
+
+# Android Studio generated files
+/.cxx/
+/.externalNativeBuild/
+captures/
+outputs/
+/navigation/
+/app/build/
+/build/
+/*.apk
+/*.ap_
+/*.aab
+
+
+
+# IntelliJ IDEA
+*.idea/workspace.xml
+*.idea/libraries
+.idea/modules.xml
+.idea/.name
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/modules
+*.iws
+.idea/vcs.xml
+.idea/dictionaries
+.idea/httpRequests
+
+# Keystore files (Do not include your keystore files in version control)
+*.jks
+*.keystore
+
+# Android packaging and build files
+*.dex
+*.class
+*.so
+*.apk
+*.ap_
+*.aab
+*.cxx
+*.o
+*.obj
+*.hprof
+*.pyc
+*.pyo
+*.r8
+
+# Generated JSON files (e.g., Firebase crash reports)
+crashlytics-build.properties
+fabric.properties
+
+# Android lint
+lint/intermediates/
+lint/generated/
+lint/reports/
+
+# NDK & C++ build artifacts
+/.externalNativeBuild/
+**/obj/
+**/libs/
+**/bin/
+**/ndkBuild/
+/.cxx/
+/.cmake/
+**/build/cmake/
+
+# Proguard & R8
+proguard/
+proguard-rules.pro
+proguard-project.txt
+consumer-rules.pro
+
+# Other IDE specific files
+/.idea/
+/.project
+.classpath
+*.ipr
+*.iws
+*.iml
+/.settings/
+
+# MacOS specific files
+.DS_Store
+*.swp
+
+# Ignore Google Services config file (if present)
+google-services.json
+firebase-app-id.json
+
+# Android Studio Profiling files
+**/captures/
+
+# Generated local IntelliJ configs
+.idea/
+
+
+!libs.versions.toml
